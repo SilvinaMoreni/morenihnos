@@ -1,0 +1,46 @@
+.detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.detalle h3{
+    margin-top: 30px;
+    color: orangered;
+    font-size: x-large;
+
+}
+.detalle p{
+    padding: 30px;
+    text-align: center;
+
+}
+.foto{
+    width: 0;
+    height: 0;
+}
+
+.foto img{
+    position:absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 80vh;
+    object-fit:cover;
+}
+.carrusel{
+    width: 45%;
+    height: 40%;
+    border-radius: 10px;
+    
+}
+
+
+.space-y-4{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:10px;
+}

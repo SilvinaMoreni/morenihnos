@@ -1,0 +1,70 @@
+.container-gral{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.titulo{
+  width: 100vw;
+  padding: 2%;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/public/img/servicios.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  z-index:1;
+  }
+.container::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(21, 14, 60, 0.446);
+    z-index:-1;
+  }
+
+.intro ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100vw;
+}
+
+.fabrica{
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+}
+.fabrica img{
+  width: 15%;
+  height: 80%;
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width: 768px) {
+  .fabrica img{
+    width: 30%;
+    height: 40%;
+    margin-bottom: 3%;
+  }
+}

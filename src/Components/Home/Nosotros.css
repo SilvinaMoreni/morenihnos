@@ -1,0 +1,73 @@
+.nosotros-container {
+    width: 100vw; /* Tamaño completo del viewport */
+    height: 100vh; /* Tamaño completo del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/public/img/nosotros.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente el contenedor */
+    position: relative;
+    z-index: 1;
+}
+
+.nosotros-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 14, 60, 0.446); /* Fondo semitransparente */
+    z-index: -1;
+}
+
+.intro {
+    width: 80%; /* Ancho máximo del contenido */
+    max-width: 800px; /* Limitar el ancho máximo para mantener la legibilidad */
+    padding: 25px;
+    background: #0a1d3075; /* Fondo semitransparente */
+    transition: transform 1s;
+    color: white;
+    font-size: large; /* Ajustar el tamaño de fuente según el diseño responsive */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro h3 {
+    color: orangered;
+    font-weight: bold;
+}
+
+.vermas {
+    width: 150px;
+    height: 60px;
+    font-size: medium; /* Ajustar el tamaño de fuente del botón */
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+
+.intro:hover {
+    transform: scale(1.2); /* Transformación de escala en hover */
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        width: 90%; /* Ancho máximo ajustado para pantallas pequeñas */
+        font-size: medium;
+    }
+    
+    .vermas {
+        width: 120px;
+        height: 50px;
+        font-size: small; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+}
