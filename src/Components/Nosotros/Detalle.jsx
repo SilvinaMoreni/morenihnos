@@ -54,7 +54,7 @@ const AboutUs = () => {
         <div className="bg-white shadow-lg rounded-lg p-8 mb-12">
           <h2 className="text-2xl font-semibold text-blue-700 mb-4">Nuestras Ubicaciones</h2>
           <div className="aspect-w-16 aspect-h-9">
-          <iframe src="https://www.google.com/maps/d/embed?mid=1e8vQGYKjXvBFhfjf_DPP9eC1gRxypyI&ehbc=2E312F" width="640" height="480"></iframe>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1e8vQGYKjXvBFhfjf_DPP9eC1gRxypyI&ehbc=2E312F" width="250" height="480"></iframe>
           </div>
         </div>
 

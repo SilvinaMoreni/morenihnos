@@ -4,6 +4,9 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
+body {
+    overflow-x: hidden; /* Prevenir el desplazamiento horizontal */
+}
 
 .banner {
     width: 100vw;
@@ -11,6 +14,7 @@
     background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40));
     background-position: center;
     background-size: center;
+    overflow: hidden;
 }
 
 
@@ -24,6 +28,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    overflow: hidden;
 }
 
 .logo{
@@ -52,7 +57,7 @@
     z-index: -1;
     width: 100vw;
     height: 80vh;
-    object-fit:fill;
+    object-fit:cover;
     
 }
 .nav_toggle{

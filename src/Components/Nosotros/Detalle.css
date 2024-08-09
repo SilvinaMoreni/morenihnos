@@ -1,9 +1,11 @@
+
+
 .detalle{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    overflow-x: hidden;
 }
 .detalle h3{
     margin-top: 30px;
@@ -34,7 +36,7 @@
     width: 45%;
     height: 40%;
     border-radius: 10px;
-    
+    margin: 0;    
 }
 
 
