@@ -4,7 +4,7 @@ import Navbar from "../Home/Navbar";
 import FotoServicios from './FotoServicios';
 import DetalleServicios from './DetalleServicios';
 import DetalleServiciosI from './DetalleServiciosI';
-
+import DetalleServiciosE from './DetalleServiciosE';
 
 
 const Servicios = () => {
@@ -15,6 +15,7 @@ const Servicios = () => {
         <FotoServicios/>
         <DetalleServicios/>
         <DetalleServiciosI/>
+        <DetalleServiciosE/>
         <Footer/>
 
         

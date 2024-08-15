@@ -2,14 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import './DetalleServicios.css';
 
-const DetalleServiciosI = () => {
+const DetalleServiciosE = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const videoRefs = useRef([]);
   const videos = [
-    "/img/carrusel/servicios/Mangueras1.MP4",
-    "/img/carrusel/servicios/Mangueras2.MP4",
-    "/img/carrusel/servicios/PH1.MP4",
-    "/img/carrusel/servicios/PH2.MP4"
+
   ];
 
   useEffect(() => {
@@ -60,15 +57,13 @@ const DetalleServiciosI = () => {
         </button>
       </div>
       <div className='disp-salvavidas'>
-        <h1>PROTECCIÓN CONTRA INCENDIOS</h1>
+        <h1>ELECTRONICA DE EMERGENCIA</h1>
             <h2>
-                Extintores, Pruebas hidráulicas, Protección respiratoria, Mangueras de incendio, Sistemas fijos de extinción de
-                incendios
+                Radiobaliza de emergencia EPIRB, radio VHF GMDSS, transpondedor de búsqueda y salvamento AIS SART GMDSS
             </h2>
             <ul>
                 <li>Mantenimiento anual acorde a ordenanza 03-18 de Prefectura Naval Argentina, 761 (18) de OMI, norma ISO 9001:2015</li>
-                <li>Service oficial YUKON, HWAYAN</li>
-                <li>Sello IRAM en control, mantenimiento y recarga de EXTINTORES</li>
+                <li>Service oficial ACR</li>
                 <li>Primeras marcas y/o repuestos originales</li>
                 <li>Urgencias las 24 hs</li>
                 <li>Retiros y entregas acorde a las necesidades del cliente</li>              
@@ -78,4 +73,4 @@ const DetalleServiciosI = () => {
   );
 };
 
-export default DetalleServiciosI;
+export default DetalleServiciosE;
