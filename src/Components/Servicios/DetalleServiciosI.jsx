@@ -9,8 +9,7 @@ const DetalleServiciosI = () => {
     "/img/carrusel/servicios/Mangueras1.MP4",
     "/img/carrusel/servicios/Mangueras2.MP4",
     "/img/carrusel/servicios/PH1.MP4",
-    "/img/carrusel/servicios/PH2.MP4",
-
+    "/img/carrusel/servicios/PH2.MP4"
   ];
 
   useEffect(() => {
@@ -48,6 +47,7 @@ const DetalleServiciosI = () => {
             key={index}
             ref={el => videoRefs.current[index] = el}
             src={video}
+            type="video/MP4"
             className={`carousel-video ${index === currentSlide ? 'active' : ''}`}
             muted
           />
