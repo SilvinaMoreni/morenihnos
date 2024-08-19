@@ -1,9 +1,9 @@
 import React from 'react'
-import "./IntroFoto.css"
+import '../Nosotros/Detalle.css';
 
 const IntroFoto = () => {
   return (
-    <div className='Intro'>
+    <div className='foto'>
          <img className="foto" src="/img/EPIRB.jpg" alt="balsas e incendio" />
 
     </div>
