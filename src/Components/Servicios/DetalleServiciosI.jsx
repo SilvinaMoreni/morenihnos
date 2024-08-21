@@ -32,11 +32,11 @@ const DetalleServiciosI = () => {
   }, [currentSlide]);
 
   const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % videos.length);
+    setCurrentSlide(prevSlide => (prevSlide + 1) % videos.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + videos.length) % videos.length);
+    setCurrentSlide(prevSlide => (prevSlide - 1 + videos.length) % videos.length);
   };
 
   return (
@@ -47,7 +47,7 @@ const DetalleServiciosI = () => {
             key={index}
             ref={el => videoRefs.current[index] = el}
             src={video}
-            type="video/MP4"
+            type="video/mp4"
             className={`carousel-video ${index === currentSlide ? 'active' : ''}`}
             muted
           />
@@ -61,18 +61,17 @@ const DetalleServiciosI = () => {
       </div>
       <div className='disp-salvavidas'>
         <h1>PROTECCIÓN CONTRA INCENDIOS</h1>
-            <h2>
-                Extintores, Pruebas hidráulicas, Protección respiratoria, Mangueras de incendio, Sistemas fijos de extinción de
-                incendios
-            </h2>
-            <ul>
-                <li>Mantenimiento anual acorde a ordenanza 03-18 de Prefectura Naval Argentina, 761 (18) de OMI, norma ISO 9001:2015</li>
-                <li>Service oficial YUKON, HWAYAN</li>
-                <li>Sello IRAM en control, mantenimiento y recarga de EXTINTORES</li>
-                <li>Primeras marcas y/o repuestos originales</li>
-                <li>Urgencias las 24 hs</li>
-                <li>Retiros y entregas acorde a las necesidades del cliente</li>              
-            </ul>
+        <h2>
+          Extintores, Pruebas hidráulicas, Protección respiratoria, Mangueras de incendio, Sistemas fijos de extinción de incendios
+        </h2>
+        <ul>
+          <li>Mantenimiento anual acorde a ordenanza 03-18 de Prefectura Naval Argentina, 761 (18) de OMI, norma ISO 9001:2015</li>
+          <li>Service oficial YUKON, HWAYAN</li>
+          <li>Sello IRAM en control, mantenimiento y recarga de EXTINTORES</li>
+          <li>Primeras marcas y/o repuestos originales</li>
+          <li>Urgencias las 24 hs</li>
+          <li>Retiros y entregas acorde a las necesidades del cliente</li>
+        </ul>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../Home/Footer';
 import Navbar from "../Home/Navbar";
+import FormularioContacto from './ContactoForm';
 
 
 
@@ -10,10 +11,7 @@ const Contacto = () => {
     <div>
 
         <Navbar/>
-        <div>
-            <h1>CONTACTO</h1>
-        </div>
-
+        <FormularioContacto/>
         <Footer/>
 
         

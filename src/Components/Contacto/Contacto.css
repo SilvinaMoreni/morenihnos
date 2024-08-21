@@ -1,0 +1,6 @@
+.max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
