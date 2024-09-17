@@ -4,28 +4,31 @@ import { Link } from 'react-router-dom';
 
 function Productos () {
     return (
-        <div className="container-gral">
-                    <div className="titulo">
-                        <h1> PRODUCTOS</h1>  
-                    </div> 
+
+
                     <div className="container-art">
-                        <div className="intro">
-                                <h3>VENTA DE ARTICULOS NAVALES E INDUSTRIALES</h3>
-                                <p>
-                                        - Dispositivos salvavidas: balsas salvavidas, chalecos salvavidas, trajes de inmersión
-                                        y dispositivo de rescate hombre al agua.<br></br>
-                                        - Equipos de lucha contra incendios.<br></br>
-                                        - Equipos de comunicación de emergencia GMDSS: EPIRB, VHF y SART.<br></br>
-                                        - Almacen naval general.<br></br>
-                                </p>
-                                <Link to="/Productos">
+                        <h1>PRODUCTOS</h1>
+                        <div className="products">                           
+                                        <h2>BALSAS SALVAVIDAS</h2>
+                                        <h2>CHALECOS SALVAVIDAS</h2>
+                                        <h2>TRAJES DE INMERSION</h2>
+                                        <h2>DISPOSITIVO DE RESCATE HOMBRE AL AGUA</h2>
+                                        <h2>EXTINTORES MANUALES Y RODANTES</h2>
+                                        <h2>MANGUERAS DE INCENDIO</h2>
+                                        <h2>BRONCERIA DE INCENDIO</h2>
+                                        <h2>EQUIPO AUTONOMO DE RESPIRACIÓN Y EEBD</h2>
+                                        <h2>TRAJE DE BOMBERO COMPLETO</h2>
+                                        <h2>CARTELERIA GENERAL</h2>
+                                        <h2>ALMACEN NAVAL GENERAL</h2>
+                                        <h2>EQUIPO DE BUSQUEDA Y RESCARTE: EPIRB, VHF Y SART GMDSS</h2>
+                        </div>
+                        <Link to="/Productos">
                                     <button className="vermas">
                                         VER MAS
                                     </button>
-                                </Link>
-                        </div>
+                        </Link>
                     </div>
-        </div>
+
     )
 
 }

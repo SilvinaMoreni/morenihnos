@@ -1,70 +1,93 @@
-.container-gral{
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
- 
-}
-.titulo{
-  width: 100vw;
-  padding: 2%;
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
 .container{
   display: flex;
+  flex-direction: column;
   justify-content:center;
   align-items:center;
   width: 100vw;
   height: 100vh;
-  background-image: url(/public/img/servicios.jpeg);
+  background-image: url(/public/img/contacto.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position:relative;
   z-index:1;
+  gap:20px;
+  margin-top: 5%;
+  padding-top: 5%;
+  color:white;
   }
 .container::after{
     content:"";
     position:absolute;
     top:0;
     left:0;
-    width:100%;
-    height:100%;
-    background-color: rgba(21, 14, 60, 0.446);
+    width:100vw;
+    height:100vh;
+    background-color: rgba(0, 0, 174, 0.566);
     z-index:-1;
   }
 
-.intro ul{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100vw;
+.container h1{
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
 }
 
-.fabrica{
-    width: 100%;
-    height: 20%;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap:5%;
-}
-.fabrica img{
-  width: 15%;
-  height: 80%;
-  margin-bottom: 3%;
+.service {
+  width: 300px;
+  background-color: #29049a5b; /* Dark blue background */
+  margin: 5%;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-  .fabrica img{
-    width: 30%;
-    height: 40%;
-    margin-bottom: 3%;
-  }
+.service h2 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 15px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
 }
+
+
+.service h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: orangered; /* Red bar */
+  transition: width 0.3s ease;
+  z-index: -1; /* Place it behind the text */
+}
+.service h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: orangered; /* Red background */
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: -2; /* Place it behind the red bar */
+}
+
+.service h2:hover {
+  padding-left: 20px;
+}
+
+.service h2:hover::before {
+  width: 100%;
+}
+
+.service h2:hover::after {
+  transform: translateX(0);
+}
+

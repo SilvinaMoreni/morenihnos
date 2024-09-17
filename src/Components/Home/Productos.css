@@ -1,23 +1,79 @@
 .container-art{
-    background-image: url(/public/img/productos.JPG);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  width: 100vw;
+  height: 100vh;
+  padding:2% ;
+}
+
+.container-art h1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.products {
     display: flex;
-    justify-content:center;
-    align-items:center;
-    width: 100vw;
-    height: 100vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position:relative;
-    z-index:1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 4%;
+
+    overflow: hidden;
 }
-.container-art::after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-color: rgba(21, 14, 60, 0.446);
-    z-index:-1;
+  
+.products h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
 }
+  
+  
+.products h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    color: white;
+    background-color: orangered; /* Red bar */
+    transition: width 0.3s ease;
+    z-index: -1; /* Place it behind the text */
+    
+}
+.products h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: orangered; /* Red background */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: -2; /* Place it behind the red bar */
+    
+  }
+  
+.products h2:hover {
+    padding-left: 20px;
+    color: white;
+}
+  
+.products h2:hover::before {
+    width: 100%;
+    color: white;
+}
+  
+.products h2:hover::after {
+    transform: translateX(0);
+}
+

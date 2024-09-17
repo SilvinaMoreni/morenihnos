@@ -1,73 +1,156 @@
+/* Estilos base (mantenidos como antes) */
 .nosotros-container {
-    width: 100vw; /* Tamaño completo del viewport */
-    height: 100vh; /* Tamaño completo del viewport */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("/public/img/nosotros.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente el contenedor */
-    position: relative;
-    z-index: 1;
-}
-
-.nosotros-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(21, 14, 60, 0.446); /* Fondo semitransparente */
-    z-index: -1;
-}
-
-.intro {
-    width: 80%; /* Ancho máximo del contenido */
-    max-width: 800px; /* Limitar el ancho máximo para mantener la legibilidad */
-    padding: 25px;
-    background: #0a1d3075; /* Fondo semitransparente */
-    transition: transform 1s;
-    color: white;
-    font-size: large; /* Ajustar el tamaño de fuente según el diseño responsive */
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-bottom: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    margin-bottom: 5rem;
+    padding: 1rem;
 }
 
-.intro h3 {
-    color: orangered;
+.intro {
+    width: 100%;
+    max-width: 800px;
+    color: rgb(6, 34, 81);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    padding: 1rem;
+}
+
+.intro h1 {
+    color: rgb(6, 2, 66);
     font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .vermas {
     width: 150px;
     height: 60px;
-    font-size: medium; /* Ajustar el tamaño de fuente del botón */
+    font-size: 1rem;
     background-color: orangered;
     color: white;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.intro:hover {
-    transform: scale(1.2); /* Transformación de escala en hover */
+.vermas:hover {
+    background-color: #ff6347;
 }
 
-@media screen and (max-width: 768px) {
+/* Ajustes en la sección de certificaciones */
+
+.certificaciones {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.certificaciones img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustes en el slider */
+
+.certificaciones .slick-slide {
+    margin: 0;
+}
+
+.certificaciones .slick-slide div {
+    padding:0;
+}
+
+
+/* Nuevo ajuste para reducir la altura del slick-track */
+.certificaciones .slick-track {
+    height: auto !important; /* Forzar la altura automática */
+}
+
+.certificaciones .slick-slide img {
+    max-height: 150px; /* Ajusta este valor según tus necesidades */
+    width: auto;
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+}
+
+
+
+
+/* Ajustes en los indicadores del slider */
+.certificaciones .slick-dots {
+    bottom: -25px; /* Ajusta esto según sea necesario */
+}
+
+.certificaciones .slick-dots li {
+    margin: 0 2px; /* Reduce el espacio entre los puntos */
+}
+
+.certificaciones .slick-dots li button:before {
+    font-size: 8px; /* Reduce el tamaño de los puntos */
+}
+
+/* Media queries (mantenidas como antes) */
+@media (max-width: 768px) {
     .intro {
-        width: 90%; /* Ancho máximo ajustado para pantallas pequeñas */
-        font-size: medium;
+        font-size: 1rem;
     }
-    
+
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
     .vermas {
         width: 120px;
         height: 50px;
-        font-size: small; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        font-size: 0.9rem;
     }
+
+    .certificaciones {
+        width: 90%;
+    }
+    .certificaciones .slick-slide img {
+        max-height: 120px; /* Reducir aún más para pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        font-size: 0.9rem;
+    }
+
+    .intro h1 {
+        font-size: 1.2rem;
+    }
+
+    .vermas {
+        width: 100px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .nosotros-container .certificaciones {
+        padding: 0 5px; /* Reducido aún más para pantallas pequeñas */
+    }
+
+    .certificaciones .slick-dots {
+        bottom: -20px; /* Ajustado para pantallas pequeñas */
+    }
+    .certificaciones .slick-slide img {
+        max-height: 100px; /* Reducir aún más para pantallas pequeñas */
+    }
+
 }

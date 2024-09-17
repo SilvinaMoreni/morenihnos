@@ -7,9 +7,6 @@ function BarraNav() {
   return (
     
     <div className='banner'>
-
-          
-
           <div className='navbar'>          
                     <img className='logo' src="../img/logo-moreni.png" alt="logo"/> 
                     <ul className={`navbar ul ${isOpen ? "open" : ""}`}>
