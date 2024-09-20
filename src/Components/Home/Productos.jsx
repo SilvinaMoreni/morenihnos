@@ -1,6 +1,6 @@
 import './Productos.css'
 import './Servicios.css'
-import { Link } from 'react-router-dom';
+
 
 function Productos () {
     return (
@@ -22,11 +22,7 @@ function Productos () {
                                         <h2>ALMACEN NAVAL GENERAL</h2>
                                         <h2>EQUIPO DE BUSQUEDA Y RESCARTE: EPIRB, VHF Y SART GMDSS</h2>
                         </div>
-                        <Link to="/Productos">
-                                    <button className="vermas">
-                                        VER MAS
-                                    </button>
-                        </Link>
+                        
                     </div>
 
     )

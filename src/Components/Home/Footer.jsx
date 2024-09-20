@@ -33,9 +33,8 @@ function Footer() {
                 <div className="derechos">
                     <p>
                         © 2024 Moreni Hnos SRL - Todos los derechos reservados.<br/>
-                        Diseñado y desarrollado por:
-                        <a href="https://www.linkedin.com/in/silvina-moreni-1a6507229">@Silvina Moreni</a><br/> 
-                        Imagenes y videos: <a href="...">@EAGroup</a><br/>
+                        Diseño y desarrollo:
+                        <a href="https://www.linkedin.com/in/silvina-moreni-1a6507229">@Silvina Moreni</a>
                     </p>
                 </div>
             </div>

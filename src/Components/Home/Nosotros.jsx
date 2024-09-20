@@ -10,8 +10,8 @@ function Nosotros() {
         dots: true,
         infinite: true,
         speed: 700,
-        slidesToShow: 3, // Ajustado para mostrar más imágenes a la vez
-        slidesToScroll: 2,
+        slidesToShow: 5, // Ajustado para mostrar más imágenes a la vez
+        slidesToScroll: 1,
         autoplay: true,
         responsive: [
           {
@@ -63,6 +63,22 @@ function Nosotros() {
                     <div>
                         <img src="/img/iram.png" alt="Certificación IRAM 3517-2"/>
                     </div>
+                    <div>
+                        <img src="/img/ACR.png" alt="Certificación ACR"/>
+                    </div>
+                    <div>
+                        <img src="/img/CSM.png" alt="Certificación CSM"/>
+                    </div>
+                    <div>
+                        <img src="/img/HN.png" alt="Certificación HN"/>
+                    </div>
+                    <div>
+                        <img src="/img/Hwayan.png" alt="Certificación Hwayan"/>
+                    </div>
+                    <div>
+                        <img src="/img/Youlong.png" alt="Certificación Youlong"/>
+                    </div>
+
                 </Slider>                             
             </div>
         </div>

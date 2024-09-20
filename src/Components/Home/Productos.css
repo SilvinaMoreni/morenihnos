@@ -5,7 +5,9 @@
   align-items:center;
   width: 100vw;
   height: 100vh;
-  padding:2% ;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  gap: 10%;
 }
 
 .container-art h1{
@@ -17,10 +19,28 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 4%;
-
+    padding: 5%;
+    background-image: url(/public/img/articulos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
     overflow: hidden;
+    z-index: 1;
+    position: relative;
+    color: white;
+    
 }
+.products::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.545);
+    z-index: -1;
+  }
   
 .products h2 {
     font-size: 18px;
