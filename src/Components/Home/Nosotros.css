@@ -74,7 +74,7 @@
 
 
 .certificaciones .slick-slide img {
-    max-height: 150px; /* Ajusta este valor según tus necesidades */
+    max-height: 200px; /* Ajusta este valor según tus necesidades */
     width: auto;
     margin: 0 auto; /* Centrar la imagen horizontalmente */
 }
