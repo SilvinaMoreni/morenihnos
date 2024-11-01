@@ -2,9 +2,8 @@ import React from 'react'
 import Footer from '../Home/Footer';
 import Navbar from "../Home/Navbar";
 import FotoServicios from './FotoServicios';
-import DetalleServicios from './DetalleServicios';
-import DetalleServiciosI from './DetalleServiciosI';
-import DetalleServiciosE from './DetalleServiciosE';
+import DetalleServiciosD from './DetalleServiciosD';
+
 
 
 const Servicios = () => {
@@ -13,9 +12,7 @@ const Servicios = () => {
 
         <Navbar/>
         <FotoServicios/>
-        <DetalleServicios/>
-        <DetalleServiciosI/>
-        <DetalleServiciosE/>
+        <DetalleServiciosD/>
         <Footer/>
 
         

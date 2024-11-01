@@ -11,7 +11,7 @@ const Detalle = () => {
     dots: true,
     infinite: true,
     speed: 700,
-    slidesToShow: 3, // Ajustado para mostrar más imágenes a la vez
+    slidesToShow: 2, // Ajustado para mostrar más imágenes a la vez
     slidesToScroll: 1,
     autoplay: true,
     responsive: [
@@ -62,7 +62,7 @@ const Detalle = () => {
         <div className="certificaciones">
                 <Slider {...settings}>
                     <div>
-                    <img src="/img/carrusel/carrusel1.JPG" alt="Instalaciones de MORENI HNOS."/>
+                    <img src="/img/carrusel/carrusel1.JPG" alt="Instalaciones de MORENI HNOS."width="600" height="400"/>
                     </div>
                     <div>
                     <img src="/img/carrusel/carrusel2.JPG" alt="Equipo de trabajo"/>

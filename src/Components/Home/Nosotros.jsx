@@ -10,7 +10,7 @@ function Nosotros() {
         dots: true,
         infinite: true,
         speed: 700,
-        slidesToShow: 5, // Ajustado para mostrar más imágenes a la vez
+        slidesToShow: 2, // Ajustado para mostrar más imágenes a la vez
         slidesToScroll: 1,
         autoplay: true,
         responsive: [
